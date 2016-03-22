@@ -1,1 +1,6 @@
 https://support.microsoft.com/en-us/kb/2752600
+
+
+Right click on browser
+Click inprivate browsing
+Type in your url _layouts/closeConnection.aspx?loginasanotheruser=true 
