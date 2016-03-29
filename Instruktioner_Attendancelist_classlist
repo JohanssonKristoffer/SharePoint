@@ -13,18 +13,17 @@ Class list
 12. Done, tryck på OK
 
 Skapa en ny lista. Name: Attendance list  (i root site)
-1. öppna content types > Item > gör Title till hidden
-2. Öppna views längst ner > All items > Bocka av title
-3. Nu ska vi skapa 4 columner.
-4. Skapa en ny column > Attendance
-5. Choice
-6. Require that this... Yes
-7. Enfore unique... No
-8. Fyll i  > Present, Excused, Absent
-9. Using dropdown
-10. Allow fill in... NO
-11. Default value.. Present
-12. Tryck på OK
+1. Nu ska vi skapa 4 columner.
+2. Skapa en ny column > Attendance
+3. Choice
+4. Require that this... Yes
+6. Enfore unique... No
+7. Fyll i  > Present, Excused, Absent
+8. Using dropdown
+9. Allow fill in... NO
+10. Default value.. Present
+11. Tryck på OK
+12. Öppna content types > Item > gör Title till hidden. Tryck OK.
 
 13. Skapa en ny column > Name: Class Name
 14. Välj Look up
@@ -53,16 +52,16 @@ Skapa en ny lista. Name: Attendance list  (i root site)
 35. Show field: name (with pre..)
 36. Tryck på OK
 
-37. Tryck på kugghjulet längst upp till höger, välj site settings
-38. Gå till People and groups
-39. Gå till school students under Groups
-40. Settings > Group settings
-41. Who can view the membership of this group > Everyone
-42. Scrolla ner. tryck på OK.
-43. Done
+37. Gå tillbaka till settings för Attendence List
+38. Välj Views > all items längst ner
+39. Vi ska ställa in position from left
+40. 1-Attendence, 2-Student Name, 3-Class Name, 4-Lecture Date
+41. Rör inget annat. Tryck på OK.
 
-34. Gå tillbaka till settings för Attendence List
-35. Välj Views > all items längst ner
-36. Vi ska ställa in position from left
-37. 1-Attendence, 2-Student Name, 3-Class Name, 4-Lecture Date
-38. Rör inget annat. Tryck på OK.
+42. Tryck på kugghjulet längst upp till höger, välj site settings
+43. Gå till People and groups
+44. Gå till school students under Groups
+45. Settings > Group settings
+46. Who can view the membership of this group > Everyone
+47. Scrolla ner. tryck på OK.
+48. Done
