@@ -1,0 +1,73 @@
+class list
+
+Site contents > custom list
+1. Döp den till: Class List
+2. Välj Titel under rubriken columns. Döp om den till Class Name
+3. Skapa en kolumn > döp den till Teacher
+4. Välj Person or group
+5. Välj require that column
+6. Välj inte enforce uniqie
+7. Välj inte allow multiple
+8. Allow People only
+9. Choose from Sharepoint group > school teacher
+10. Show Field Name with presence
+11. Done, tryck på OK
+12. Gå in på Permissions för
+
+a
+attendance list
+1. öppna content types > Item > gör Title till hidden
+2. Öppna views längst ner > All items > Bocka av title
+3. Nu ska vi skapa 4 columner.
+4. Skapa en ny column > Attendance
+5. Choice
+6. Require that this... Yes
+7. Enfore unique... No
+8. Fyll i  > Present, Excused, Absent
+9. Using dropdown
+10. Allow fill in... NO
+11. Default value.. Present
+12. Tryck på OK
+
+13. Skapa en ny column > Name: Class Name
+14. Välj Look up
+15. Require that this... Yes
+16. Enfore unique... No
+17. Get information from  Class List
+18. In this column > Class Name
+19. Relationships > Inget (Restrict delete är för-klickad)
+20. Tryck på OK
+
+21. Skapa en ny column > Lecture Date
+22. Välj Date and Time
+23. Require.. YES
+24. Enforce.. NO
+25. Date and time format: Date Only
+26. Display format: Standard
+27. Default value: todays date
+28. Tryck OK
+
+29. Skapa ny column > Student name
+30. Require.. YES
+31. Enforce.. YES
+32. Allow... NO
+33. Allow selection... People only
+34. Choose from: Sharepoint Group > School students
+35. Show field: name (with pre..)
+36. Tryck på OK
+
+37. Tryck på kugghjulet längst upp till höger, välj site settings
+38. Gå till People and groups
+39. Gå till school students under Groups
+40. Settings > Group settings
+41. Who can view the membership of this group > Everyone
+42. Scrolla ner. tryck på OK.
+43. Done
+
+34. Gå tillbaka till settings för Attendence List
+35. Välj Views > all items längst ner
+36. Vi ska ställa in position from left
+37. 1-Attendence, 2-Student Name, 3-Class Name, 4-Lecture Date
+38. Rör inget annat. Tryck på OK.
+
+39. Gå in på Permissions för
