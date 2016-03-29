@@ -44,24 +44,25 @@ Skapa en ny lista. Name: Attendance list  (i root site)
 28. Tryck OK
 
 29. Skapa ny column > Student name
-30. Require.. YES
-31. Enforce.. YES
-32. Allow... NO
-33. Allow selection... People only
-34. Choose from: Sharepoint Group > School students
-35. Show field: name (with pre..)
-36. Tryck på OK
+30. Person or Group
+31. Require.. YES
+32. Enforce.. YES
+33. Allow... NO
+34. Allow selection... People only
+35. Choose from: Sharepoint Group > School students
+36. Show field: name (with pre..)
+37. Tryck på OK
 
-37. Gå tillbaka till settings för Attendence List
-38. Välj Views > all items längst ner
-39. Vi ska ställa in position from left
-40. 1-Attendence, 2-Student Name, 3-Class Name, 4-Lecture Date
-41. Rör inget annat. Tryck på OK.
+38. Gå tillbaka till settings för Attendence List
+39. Välj Views > all items längst ner
+40. Vi ska ställa in position from left
+41. 1-Attendence, 2-Student Name, 3-Class Name, 4-Lecture Date
+42. Rör inget annat. Tryck på OK.
 
-42. Tryck på kugghjulet längst upp till höger, välj site settings
-43. Gå till People and groups
-44. Gå till school students under Groups
-45. Settings > Group settings
-46. Who can view the membership of this group > Everyone
-47. Scrolla ner. tryck på OK.
-48. Done
+43. Tryck på kugghjulet längst upp till höger, välj site settings
+44. Gå till People and groups
+45. Gå till school students under Groups
+46. Settings > Group settings
+47. Who can view the membership of this group > Everyone
+48. Scrolla ner. tryck på OK.
+49. Done
