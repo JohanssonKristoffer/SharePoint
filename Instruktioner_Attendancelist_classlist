@@ -1,21 +1,20 @@
-class list
+Class list
+1. Site contents > custom list (i root site)
+2. Döp den till: Class List
+3. Välj Titel under rubriken columns. Döp om den till Class Name
+4. Skapa en kolumn > döp den till Teacher
+5. Välj Person or group
+6. Välj require that column
+7. Välj inte enforce uniqie
+8. Välj inte allow multiple
+9. Allow People only
+10. Choose from Sharepoint group > school teacher
+11. Show Field Name with presence
+12. Done, tryck på OK
+13. Gå in på Permissions för
 
-Site contents > custom list
-1. Döp den till: Class List
-2. Välj Titel under rubriken columns. Döp om den till Class Name
-3. Skapa en kolumn > döp den till Teacher
-4. Välj Person or group
-5. Välj require that column
-6. Välj inte enforce uniqie
-7. Välj inte allow multiple
-8. Allow People only
-9. Choose from Sharepoint group > school teacher
-10. Show Field Name with presence
-11. Done, tryck på OK
-12. Gå in på Permissions för
 
-a
-attendance list
+Skapa en ny lista. Name: Attendance list  (i root site)
 1. öppna content types > Item > gör Title till hidden
 2. Öppna views längst ner > All items > Bocka av title
 3. Nu ska vi skapa 4 columner.
