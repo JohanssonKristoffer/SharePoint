@@ -11,8 +11,6 @@ Class list
 10. Choose from Sharepoint group > school teacher
 11. Show Field Name with presence
 12. Done, tryck på OK
-13. Gå in på Permissions för
-
 
 Skapa en ny lista. Name: Attendance list  (i root site)
 1. öppna content types > Item > gör Title till hidden
@@ -68,5 +66,3 @@ Skapa en ny lista. Name: Attendance list  (i root site)
 36. Vi ska ställa in position from left
 37. 1-Attendence, 2-Student Name, 3-Class Name, 4-Lecture Date
 38. Rör inget annat. Tryck på OK.
-
-39. Gå in på Permissions för
