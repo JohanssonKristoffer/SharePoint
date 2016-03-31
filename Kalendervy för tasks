@@ -1,0 +1,34 @@
+Kalendervy för tasks på sub sites
+
+1.Starta Sharepoint.
+2.Klicka på Open Site.
+3.Skriv in : http://school.dev15.com Som Site name.Klicka Open.
+4.Logga in dig själv på servern.
+5.Klicka på Lists and Libraries.
+6.På Lists klicka på Student Tasks.
+7.På "Views", Double klicka på viewn som har type:HTML.
+8.Markera följande text:
+Från:
+<WebPartPages:XsltListViewWebPart runat="server" 
+Till:
+</ZoneTemplate></WebPartPages:WebPartZone>
+
+Eller från rad 21-39(Är ej säker om Ni får samma)
+
+9.Klicka på "Insert" där uppe.
+10.Klicka på "DataView" för att välja Student Tasks från listan.
+11.Klicka på "WEB PART" uppe i Menyn.
+12.Klicka på "To site gallery".
+13.Du får en fönster ruta, klicka på OK.
+14.Klicka på YES på nästa ruta.
+15.Klicka på F5 för att uppdatera i SP Designer.
+16.Tillbaka till Webbläsaren(Logga in dig själv).
+17.Navigera till subsiten som du vill ha Tasks i.
+18.Klicka på "Page" uppe i Menyn.
+19.Klicka på "Edit" sedan på "Edit".
+20.Klicka på "Insert".
+21.Klicka på "WebPart".
+22.I "Categories", Klicka på Miscellaneous.
+23.I "Parts", välj "Student tasks webpart".
+24.Klicka på Add.
+25.Klicka på "Save", Done.
