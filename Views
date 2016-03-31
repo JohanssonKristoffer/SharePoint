@@ -1,0 +1,34 @@
+                                            Teacher	Student
+Mainsite					                     			Read		Read
+	Content:
+		Student tasks					                  Contribute	Hidden
+		School news						                  Contribute	Hidden
+		Attendance list					              	Read		Hidden
+		Student list				                		Read		Hidden
+		Class list					                  	Read		Hidden
+		Grade list					                  	Contribute	Hidden
+		External quotes					              	Hidden		Hidden
+		Document library				              	Contribute	Hidden
+	Views:	
+		School news  (filter: general news)			Read		Read
+		Daily quote webpart					            Read		Read
+		Document library				              	Read		Read
+		Grade list menu link (teacher)	  			Read		Hidden
+		Document library menu link (teacher)		Read		Read	
+		Student tasks menu link (teacher)		    Read    Read	
+
+Subsite
+	Common views:
+		Student tasks
+		School news
+		Document library
+		Survey
+
+	Student views:
+		Grade list
+		Attendance list
+
+	Teacher views
+		Attendance webpart send in
+		Survey + statistics
+		
