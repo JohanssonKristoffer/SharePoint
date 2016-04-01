@@ -32,3 +32,16 @@ Eller från rad 21-39(Är ej säker om Ni får samma)
 23.I "Parts", välj "Student tasks webpart".
 24.Klicka på Add.
 25.Klicka på "Save", Done.
+*******************************************************************************
+Permissions for Student Tasks in Subsite:
+1.Gå till Subsite
+2.Klicka på Page uppe i Menyn
+3.Klicka på Edit
+4.På Student Tasks appen finns det en liten pil(Web Part Menu), Klicka på den och välj "edit web part"
+5.I selected view välj Calender Tasks(Klicka OK om det dyker upp ett varnings fönster)
+6.Sedan klicka på Edit the current view
+7.Begin = Start Date, End = Due Date, Alla Calendar Columns = Description
+8.Välj: Show items only when the following is true
+9.Show the items when column = assigned to
+10. is equal to = Skriv in: school class a(Om du är i Class A Subsite)
+11.Klicka på OK.Done.
