@@ -33,7 +33,7 @@ Eller från rad 21-39(Är ej säker om Ni får samma)
 24.Klicka på Add.
 25.Klicka på "Save", Done.
 *******************************************************************************
-Permissions for Student Tasks in Subsite:
+Permissions for Student Tasks in Subsite Class A:
 1.Gå till Subsite
 2.Klicka på Page uppe i Menyn
 3.Klicka på Edit
@@ -45,3 +45,27 @@ Permissions for Student Tasks in Subsite:
 9.Show the items when column = assigned to
 10. is equal to = Skriv in: school class a(Om du är i Class A Subsite)
 11.Klicka på OK.Done.
+*********************************************************************************
+Hämta Student Tasks web Part till Subsite Class B
+
+1.Gå till Subsite B
+2.Klicka på Page uppe i Menyn
+3.Klicka på Edit
+4.Klicka på Insert
+5.Klicka på WebPart
+6.I Categories, välj Miscellaneous
+7.Välj Student Tasks Wepart och Klicka på Add o sedan på Save.
+8.Klicka på Page uppe i Menyn
+9.Klicka på Edit
+10.I student Tasks appen finns det liten pil(Web Part Menu) , Klicka på den för att välja Edit Web Part
+11.I selcted view, välj Calender Tasks
+12.Det dyker upp ett varnings fönster, Klicka OK sedan Klicka på Ok där nere i Menyn Och sedan Klicka på Save.
+13.Klicka på Page uppe i Menyn
+14.Klicka på Edit
+15.Klicka en gång till på den lilla pilen (Web Part Menu)
+16.Klicka på Edit the current view
+17.Begin = Start Date, End = Due Date, All Calendar Columns = Description
+18.På Filter ska du välja : Show items only when the following is true
+19.Show the items when column = Assigned To
+20.is equal to = school class b
+21.Klicka på OK.Done.
