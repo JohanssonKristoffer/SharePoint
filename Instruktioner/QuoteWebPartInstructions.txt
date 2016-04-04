@@ -1,0 +1,71 @@
+1. Öppna Visual Studio i administratörläge> New Project > Visual c# > Office/Sharepoint (Kan behöva installeras) > SharePoint 2013 Empty Project
+(Nästan längst ner)
+
+2. Döp solutionen till SharePointSchoolProjects
+
+3. Name: DailyQuoteWebPart > Klicka på OK
+
+4. SKriv in adressen (http://school.dev15.com och klicka på validate) till sidan och välj deploy as farm solution
+
+5. Högerklicka på projectet > Add > new item > Visual Web Part (Farm solution only) > Döp den till QuoteWebPart
+
+6. Rename Feature1 till QuoteFeature
+
+7. Gå till Elements.xml > Propertien med Name="Group" ska ha value SchoolWebParts
+
+8. Lägg till: <Property Name="Title" Value="Daily Quote" />
+
+9. Gå till QuoteWebPartUserControl.ascx och lägg till följande:
+
+
+<style>
+    .QuoteDiv {
+        width: 30%;
+    }
+
+    .QuoteLabels {
+        display: block;
+    }
+
+    .QuoteText {
+        font-style: italic;
+    }
+
+    .AuthorName {
+        font-weight: bold;
+        float: right;
+    }
+</style>
+<div class="QuoteDiv">
+    <asp:Label ID="QuoteText" CssClass="QuoteText QuoteLabels" runat="server">pinne</asp:Label>
+    <asp:Label ID="AuthorName" CssClass="AuthorName QuoteLabels" runat="server">fisk</asp:Label>
+</div>
+
+
+
+10. ctrl + k + d
+
+11. Gå till QuoteWebPartUserControl.ascx.cs och lägg till följande metod och anropa den i Page_Load:
+
+
+        private void ShowQuoteOfTheDay()
+        {
+            SPWeb spWeb = SPContext.Current.Web;
+            SPList quotesList = spWeb.GetList("http://school.dev15.com/Lists/External%20Quotes/");
+
+            int dailyQuoteIndex = (DateTime.Now.Day - 1) % quotesList.Items.Count;
+
+            SPListItem selectedQuote = quotesList.Items[dailyQuoteIndex];
+            QuoteText.Text = $"\"{(String)selectedQuote["QuoteText"]}\"";
+            AuthorName.Text = $"{(String)selectedQuote["Surname"]}, {(String)selectedQuote["Name"]}";
+        }
+
+
+Se till att URL:en på SPList till quoteListen stämmer(Troligtvis: "http://school.dev15.com/Lists/External%20Quotes/")
+
+12. Lägg till "using Microsoft.SharePoint;"
+
+13. Högerklicka på projektet och välj Deploy
+
+14. Gå till http://school.dev15.com > Edit > Wait for loading > Klicka på den översta rutan > Insert tabben > WebPart > 
+> Scroll till SchoolWebParts i Categories > Add DailyQuote > Save
