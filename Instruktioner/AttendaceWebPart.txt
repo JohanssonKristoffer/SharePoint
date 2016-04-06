@@ -151,6 +151,11 @@ GetContextValues();
 12. Skapa en ny klass > Döp den till StudentPresence
 13. Kopiera in följande kod:
 
+	public string Name { get; set; }
+        public SPFieldUserValue Account { get; set; }
+        public string Attendance { get; set; }
+
+        public override string ToString() => $"{Account}, {Attendance}";
 
 14. Lägg till den föreslagna using inne i klassen
 15. Kolla att allt stämmer
