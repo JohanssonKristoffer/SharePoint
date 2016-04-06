@@ -1,10 +1,10 @@
-1. Öppna upp SharePointSchoolProjects(Som skapades när vi gjorde QuoteWebParten)
-2. Lägg till ett nytt Sharepoint 2013 - Empty Project > Döp till: AttendanceSendInWebPart
+1. Ã–ppna upp SharePointSchoolProjects(Som skapades nÃ¤r vi gjorde QuoteWebParten)
+2. LÃ¤gg till ett nytt Sharepoint 2013 - Empty Project > DÃ¶p till: AttendanceSendInWebPart
 3. Skriv in adressen till school rooten > Deploy as farm solution > OK
-4. Add > New Item > Visual WebPart(Farm Solution Only) > Döp till: Attendance webpart
-5. Döp om feature1 till AttendanceFeature
-6. Dubbelklicka på AttendanceFeature och byt Title till: AttendanceFeature
-7. AttendanceWebPartUserControl.ascx > Kopiera in följande kod:
+4. Add > New Item > Visual WebPart(Farm Solution Only) > DÃ¶p till: Attendance webpart
+5. DÃ¶p om feature1 till AttendanceFeature
+6. Dubbelklicka pÃ¥ AttendanceFeature och byt Title till: AttendanceFeature
+7. AttendanceWebPartUserControl.ascx > Kopiera in fÃ¶ljande kod:
 
 <asp:Table runat="server" ID="StudentTable" CssClass="AttendanceStudentTable">
     
@@ -13,7 +13,7 @@
 <asp:Button runat="server" ID="AttendanceButton" CssClass="AttendanceButton" Text="Send" OnClick="AttendanceButton_Click" Visible="false"/>
 
 
-8. AttendanceWebPartUserControl.ascx.cs > Kopiera in följande kod efter Page_Load:
+8. AttendanceWebPartUserControl.ascx.cs > Kopiera in fÃ¶ljande kod efter Page_Load:
 
 private void GetContextValues()
         {
@@ -119,7 +119,17 @@ private void GetContextValues()
         }
 
 
-9. Kopiera in följande fält direkt i partial class:
+9. Kopiera in fÃ¶ljande fÃ¤lt direkt i partial class:
+
+
+	SPWeb spWeb;
+        SPWeb spParentWeb;
+        string className;
+        static List<StudentPresence> studentPresenceList;
+
+
+
+10. Kopiera FÃ¶ljande anrop i Page_Load:
 
 GetContextValues();
             if (!IsAttendanceDone())
@@ -137,20 +147,13 @@ GetContextValues();
                 AttendanceDoneLabel.Visible = true;
             }
 
-10. Kopiera Följande anrop i Page_Load:
-
-	SPWeb spWeb;
-        SPWeb spParentWeb;
-        string className;
-        static List<StudentPresence> studentPresenceList;
-
-11. Lägg till alla using som VS föreslår
-12. Skapa en ny klass > Döp den till StudentPresence
-13. Kopiera in följande kod:
+11. LÃ¤gg till alla using som VS fÃ¶reslÃ¥r
+12. Skapa en ny klass > DÃ¶p den till StudentPresence
+13. Kopiera in fÃ¶ljande kod:
 
 
-14. Lägg till den föreslagna using inne i klassen
-15. Kolla att allt stämmer
-16. Gå till Elements.xml > Ändra Value på Group Popertyn till SchoolWebPart
-17. Lägg till: <Property Name="Title" Value="Attendance" />
-18. Spara > Deploya > Lägg till i subsites
+14. LÃ¤gg till den fÃ¶reslagna using inne i klassen
+15. Kolla att allt stÃ¤mmer
+16. GÃ¥ till Elements.xml > Ã„ndra Value pÃ¥ Group Popertyn till SchoolWebPart
+17. LÃ¤gg till: <Property Name="Title" Value="Attendance" />
+18. Spara > Deploya > LÃ¤gg till i subsites
