@@ -1,0 +1,13 @@
+1.	Grade List > modify this view 
+2.	 first sort by the column : Student account 
+3.	choose show items only when the following is true 
+4.	show the items when column : student account > is equal to > [Me]
+5.	and then choose OR  > When coloumn :Graded by > is equal to > [Me] 
+6.	click OK 
+7.	go to Site contents > GradeList Settings > save list as template 
+8.	enter the name and name template 
+9.	click OK 
+10.	go to class A > Site content > add an app > Grade List template that u just created 
+11.	give it a name ( grade list class A ) 
+12.	do the same with Class B 
+
