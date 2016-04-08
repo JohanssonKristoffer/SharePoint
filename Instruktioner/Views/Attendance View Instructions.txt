@@ -1,0 +1,17 @@
+1. Gå in på Attendance list > klicka på dem tre punkterna > Klicka på modify this view
+2. First sort by the column > Student Name
+3. På filter lägg till: Student Name is equal to [Me]
+4. Öka antalet items som ska displayas till 30
+5. Klicka på OK
+
+6. Site Contents > Attendance List > Settings
+7. Permissions for this list under Permissions and Management
+8. Stop Inheriting Permsissions
+9. Sätt alla till read-only
+
+10. Site Contents > Attendance List > Settings > Save List as Template
+11. Class A > Site Content
+12. Add an App > Leta upp templaten som du skapade innan
+13. Ge den ett namn > Create
+14. Lägg till den på sidan.
+15. Upprepa för Class B
